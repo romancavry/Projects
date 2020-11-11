@@ -1,0 +1,278 @@
+/* Start */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url(img/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.intro-inner{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-title{
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.suptitle{
+    font-family: 'Kaushan Script',cursive;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.intro-title::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 70px auto;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header{
+    position: absolute;
+    width: 100%;  
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+/* Navigation */
+.nav{
+    font-size: 15px;
+}
+
+.nav-link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    margin: 10px;
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav-link:hover{
+    color: #fce38a;
+}
+
+.nav-link::after{
+    position: absolute;
+    display: inline-block;
+
+    content: '';
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    z-index: 1;
+    left: 0;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.nav-link:hover::after{
+    opacity: 1 ;
+}
+
+/* Button */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px solid #ffffff;
+    padding: 10px 15px;
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Slider */
+.intro-slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.intro-slider-parts{
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #ffffff;
+    opacity: 0.7;
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.slider-num{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.intro-slider-parts.active{
+    opacity: 1;
+}
+
+.intro-slider-parts.active:before{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+/* Section */
+.section{
+    padding: 80px 0;
+}
+
+.section-header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section-suptitle{
+    font-size: 24px;
+    color: #333333;
+    font-family: 'Kaushan Script',cursive;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: 700;   
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.section-title::after{
+    content: '';
+    height: 3px;
+    width: 70px;
+
+    display: block;
+    background-color: #f38181;
+    
+    margin: 30px auto;
+
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section-text{
+    color: #999;
+    font-size: 15px;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    width: 380px;
+}
+
+.about-item:hover .about-img {
+    transform: translate3d(-10px, -10px, 0);
+    transition: 0.1s linear;
+}
+
+.about-item:hover .about-img img {
+    opacity: 0.1;
+}
+
+.about-img {
+    background: linear-gradient(#f38181, #fce38a);
+}
+
+.about-img img {
+    transition: 0.1s linear;
+    display: block;
+}
+
+/* Statistics */
+.statistics {
+    background-color: #95e1d3;
+    margin-bottom: 270px;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat-item {
+    flex: 1 1 0;
+}

@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Josephin', sans-serif;
+  src: url(../fonts/JosefinSans-Light.woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josephin', sans-serif;
+  src: url(../fonts/JosefinSans-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josephin', sans-serif;
+  src: url(../fonts/JosefinSans-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josephin', sans-serif;
+  src: url(../fonts/JosefinSans-SemiBold.woff2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josephin', sans-serif;
+  src: url(../fonts/JosefinSans-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair', sans-serif;
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair', sans-serif;
+  src: url(../fonts/PlayfairDisplay-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair', sans-serif;
+  src: url(../fonts/PlayfairDisplay-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair', sans-serif;
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-top: 530px;
+
+  background-color: #eaeaea;
+  background-image: url(../img/body-logo.png);
+  background-position: 50% 250px;
+  background-repeat: no-repeat;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1121px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+
+}
+
+/* Header */
+.header {
+  margin-bottom: 85px;
+  transform: translateX(-10px);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 94px 40px 95px;
+
+  background-color: #f8f8f8;
+  box-shadow: 0 0 15px #dadada;
+}
+
+.header__img {
+  max-width: 88px;
+}
+
+.header__nav {
+  margin-left: 34px;
+}
+
+.header__link {
+  color: black;
+
+  font-family: 'Josephin', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__input {
+  padding-left: 45px;
+  max-width: 160px;
+
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 18% 0;
+  background-size: 12px 12px;
+
+  font-family: 'Josephin', sans-serif;
+  font-size: 12px;
+}
+
+/* Hero */
+.hero__inner {
+  background-image: url(../img/hero-background.png);
+  background-repeat: no-repeat;
+}
+
+.hero__fixed {
+  max-width: 330px;
+}
+
+.hero__img {
+
+}
+
+.hero__title {
+  color: #921026;
+  
+  font-family: 'Playfair', sans-serif;
+  font-weight: 24px;
+}
+
+.hero__subtitle {
+  font-family: 'Playfair', sans-serif;
+  font-weight: 16px;
+}
+
+.hero__btn {
+
+}

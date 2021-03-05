@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(../fonts/Quicksand-Light.woff2);
+    src: url(../fonts/Quicksand-Light.woff);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(../fonts/Quicksand-Regular.woff2);
+    src: url(../fonts/Quicksand-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(../fonts/Quicksand-Medium.woff2);
+    src: url(../fonts/Quicksand-Medium.woff);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(../fonts/Quicksand-SemiBold.woff2);
+    src: url(../fonts/Quicksand-SemiBold.woff);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    src: url(../fonts/Quicksand-Bold.woff2);
+    src: url(../fonts/Quicksand-Bold.woff);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Light.woff2);
+    src: url(../fonts/Roboto-Light.woff);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Regular.woff2);
+    src: url(../fonts/Roboto-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Medium.woff2);
+    src: url(../fonts/Roboto-Medium.woff);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Bold.woff2);
+    src: url(../fonts/Roboto-Bold.woff);
+    font-style: normal;
+    font-weight: 700;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.not-active {
+  display: none !important;
+}
+
+$text-color-blue: #3D4F9F;
+
+.container {
+    max-width: 1206px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #E4E6F0;
+}
+
+.header {
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 19px 117px;
+    } 
+
+    &__img {
+        margin-right: 73px;
+    }
+
+    &__nav {
+        text-align: center;
+        &-list {
+            display: flex;
+        }
+        &-item:not(:last-child) {
+            margin-right: 42px;
+        }
+        &-link {
+            color: #697CA6;
+
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 500;
+        }
+    }
+
+    &__media {
+        display: flex;
+        margin-left: auto;
+        margin-right: 44px;
+
+        &-item:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        &-link {
+            display: inline-block;
+        }
+
+        &-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 15px 13px;
+
+        color: $text-color-blue;
+        background-color: #D2E1FF;
+
+        font-weight: 13px;
+        line-height: 16px;
+        font-weight: 700;
+    }
+}
+
+.facebook-icon {background: url(../img/icon-fb.svg) center no-repeat;}
+.telegram-icon {background: url(../img/icon-tg.svg) center no-repeat;}
+.twitter-icon {background: url(../img/icon-twitter.svg) center no-repeat;}
+.media-icon {background: url(../img/icon-m.svg) center no-repeat;}
+
+.hero {
+    background: url(../img/hero-background.png) center no-repeat;   
+    font-family: 'Roboto', sans-serif;
+
+    &__inner {
+        padding: 92px 0 284px 0;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 580px;
+
+        text-align: center;
+    }
+
+    &__suptitle {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+    }
+
+    &__title {
+        color: $text-color-blue;
+
+        font-family: 'Quicksand', sans-serif;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 300;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        max-width: 500px;
+
+        color: #8D96BD;
+
+        font-size: 15px;
+        line-height: 29px;
+        font-weight: 400;
+    }
+
+    &__btn {
+        padding: 26px;
+        border-radius: 50%;
+
+        box-shadow: 0 0 5px lightgray;
+        background-color: #fff;
+        background-image: url(../img/icon-play.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        cursor: pointer;
+    }
+}
+
+.partners {
+
+}
+
+.bitbucket-logo {background: url(../img/bitbucker-logo.svg) center no-repeat;}
+.watch-logo {background: url(../img/watch-logo.svg) center no-repeat;}
+.facebook-logo {background: url(../img/facebook-logo.svg) center no-repeat;}
+.atlassian-logo {background: url(../img/atlassian-logo.svg) center no-repeat;}
+.audi-logo {background: url(../img/audi-logo.svg) center no-repeat;}

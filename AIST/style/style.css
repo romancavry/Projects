@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Light.woff2),
+  url(../fonts/Montserrat-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.woff2),
+  url(../fonts/Montserrat-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.woff2),
+  url(../fonts/Montserrat-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-ExtraBold.woff2),
+  url(../fonts/Montserrat-ExtraBold.woff);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff2),
+  url(../fonts/Montserrat-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 946px;
+  width: 100%;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* Header */
+.header__inner {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.nav__left-container, .nav__right-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #000;
+}
+
+.nav__link:nth-child(2n) {
+  margin-left: 120px;
+}
+
+.header__logo {
+  width: 154px;
+  height: 54px;
+}
+
+/* Hero */
+.hero__inner {
+  padding-top: 45px;
+  padding-bottom: 83px;
+}
+
+.hero__top {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 47px;
+  font-weight: 700;
+}
+
+.hero__descr {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hero__address {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero__img-container {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 69px;
+
+  background-image: url(../img/12017-06-08.jpg);
+  background-size: contain;
+}
+
+/* About */
+.about {
+  background-color: #f6f6f6;
+}
+
+.about__inner {
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 35px;
+}
+
+.about__subtitle {
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 485px;
+}
+
+/* Services */
+.services__inner {
+  padding: 70px 0 155px;
+
+  text-align: center;
+}
+
+.services__title {
+  margin-bottom: 70px;
+}
+
+.services__subtitle {
+  margin-bottom: 70px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.services__list {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services__list-item {
+  height: 118px;
+}
+
+.services__list-img {
+  margin-bottom: 10px;
+  max-width: 74px;
+}
+
+/* Contacts */
+.contacts {
+  background-color: #f6f6f6;
+}
+
+.contacts__inner {
+  padding-top: 70px;
+  padding-bottom: 60px;
+
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 40px;
+}
+
+.contacts__btn {
+  margin-bottom: 54px;
+  padding: 14px 26px;
+  border-radius: 30px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  background-color: #000;
+  color: #fff;
+}
+
+.contacts__list {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.contacts__list-img {
+  width: 85px;
+  height: 85px;
+}
+
+.AUTHOR {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #828282;
+}
